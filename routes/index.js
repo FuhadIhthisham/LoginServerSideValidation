@@ -56,9 +56,38 @@ router.get("/", verifyLogin, function (req, res, next) {
   ];
 
   var table = [
-    [1, "Fuhad", 999, "99.00%"]
-  ]
-  res.render("homepage", { user, logsuccess, card, list });
+    {
+      sn: 1,
+      name: "Fuhad",
+      mark: 99,
+      percent: "99.00%",
+    },
+    {
+      sn: 2,
+      name: "Akshay",
+      mark: 69,
+      percent: "84.00%",
+    },
+    {
+      sn: 3,
+      name: "Ameer",
+      mark: 84,
+      percent: "84.00%",
+    },
+    {
+      sn: 4,
+      name: "Sigishnu",
+      mark: 56,
+      percent: "96.00%",
+    },
+    {
+      sn: 5,
+      name: "Ashik Ali",
+      mark: 45,
+      percent: "73.00%",
+    },
+  ];
+  res.render("homepage", { user, logsuccess, card, list, table });
   logsuccess = false;
 });
 function verifyLogin(req, res, next) {

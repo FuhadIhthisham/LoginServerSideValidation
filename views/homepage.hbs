@@ -100,12 +100,14 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
+    {{#each table}}
+      <tr>
+        <td>{{this.sn}}</td>
+        <td>{{this.name}}</td>
+        <td>{{this.mark}}</td>
+        <td>{{this.percent}}</td>
+      </tr>
+    {{/each}}
   </tbody>
 </table>
 </div>
