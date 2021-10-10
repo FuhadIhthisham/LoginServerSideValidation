@@ -12,7 +12,7 @@ var app = express();
 app.use(
   session({
     secret: "key",
-    cookie: { maxAge: 60000 },
+    cookie: { maxAge: 6000000 },
     resave: false,
     saveUninitialized: true,
   })
