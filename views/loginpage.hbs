@@ -9,12 +9,13 @@
           <div class="card-body p-5 text-center">
 
             <div class="mb-md-0 mt-md-4 pb-5">
-              <form action="/submit" method="POST">
+              <form action="/submit" id="login-form" method="POST">
                 <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                 <p class="text-white-50 mb-4">Please enter your login and
                   password!</p>
 
                 <div class="form-outline form-white mb-4">
+                  <label class="form-label" for="typeEmailX">Username</label>
                   <input
                     type="text"
                     name="username"
@@ -22,11 +23,11 @@
                     class="form-control form-control-lg"
                     placeholder="Username"
                   />
-                  <label class="form-label" for="typeEmailX">Email</label>
 
                 </div>
 
                 <div class="form-outline form-white mb-4">
+                  <label class="form-label" for="typePasswordX">Password</label>
                   <input
                     type="password"
                     name="pass"
@@ -34,11 +35,6 @@
                     class="form-control form-control-lg"
                     placeholder="Password"
                   />
-                  <label class="form-label" for="typePasswordX">Password</label>
-
-                  {{#if LoginErr}}
-                    <p class="text-danger">Incorrect Username or Password</p>
-                  {{/if}}
 
                 </div>
 

@@ -8,6 +8,7 @@ var session = require("express-session");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 
+// creating cookies
 var app = express();
 app.use(
   session({
