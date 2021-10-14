@@ -16,4 +16,8 @@ login.validate({
       required: "This field is required",
     },
   },
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 54750d8d20f57af33307ee40f4a48f2c5ecfe68f
