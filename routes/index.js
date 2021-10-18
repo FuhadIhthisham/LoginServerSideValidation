@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 
 var userName = ["fuhad", "ihthisham"];
-var password = ["123", "123"];
+var password = ["12345678", "12345678"];
 var signOut = false;
 var logsuccess = false;
 
