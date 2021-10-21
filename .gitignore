@@ -1518,5 +1518,4 @@ node_modules/yallist/LICENSE
 node_modules/yallist/package.json
 node_modules/yallist/README.md
 node_modules/yallist/yallist.js
-bin/www
 node_modules/undefsafe/.github/workflows/release.yml
